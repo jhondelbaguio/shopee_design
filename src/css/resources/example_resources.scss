@@ -1,0 +1,5 @@
+$example-variable: #3a3a3a;
+
+@mixin header-color{
+	color: $example-variable;
+}

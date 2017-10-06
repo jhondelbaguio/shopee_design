@@ -14,8 +14,10 @@ module.exports = function(config) {
     loaders: ["raw"]
   },{
     test: /\.scss$/,
-    loaders: ["style", "css", "sass"]
+    loaders: ["style", "css", "sass","sass-resources"]
   });
+
+  config.sassResources = path.resolve('src')+'/css/resources/example_resources.scss';
 
   // Allow importing anything under 'src' as if it were a module.
   // So you can "import Icon from 'components/Icon'" instead of

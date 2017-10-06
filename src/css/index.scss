@@ -820,3 +820,7 @@ input:focus {
 * html .clearfix {
 	height: 1%;
 }
+
+.jumbotron-header{
+	@include header-color;
+}
